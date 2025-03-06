@@ -40,7 +40,7 @@ I'm passionate about creating seamless web experiences and innovative solutions.
 
 ### 📫 Let's Connect
 
-- 💼 [LinkedIn](#)
+- 💼 [LinkedIn](Akuya Praise)
 - 🌐 [Portfolio](#)
 - 📧 [Email](akuyapraise@gmail,com)
 
