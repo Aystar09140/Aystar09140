@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Haven - Experience Extraordinary Comfort</title>
+  <meta name="description" content="Welcome to Luxury Haven, where extraordinary comfort meets unparalleled luxury. Experience world-class amenities and impeccable service.">
+  <meta name="keywords" content="luxury hotel, 5-star accommodation, luxury rooms, spa resort, fine dining, exclusive suites">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="nav-brand">
+      <a href="#home">
+        <h1>Luxury Haven</h1>
+      </a>
+    </div>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#rooms" class="nav-link">Rooms</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#location" class="nav-link">Location</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li class="book-now-container">
+        <a href="#booking" class="nav-link book-now">Book Now</a>
+        <div class="booking-dropdown">
+          <div class="dropdown-header">Select Room Type</div>
+          <div class="dropdown-items">
+            <a href="#" class="dropdown-item" data-room="Standard Room">
+              <div class="room-info">
+                <span class="room-name">Standard Room</span>
+                <span class="room-price">₦20,000/night</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item" data-room="Deluxe Suite">
+              <div class="room-info">
+                <span class="room-name">Deluxe Suite</span>
+                <span class="room-price">₦45,000/night</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item" data-room="Executive Suite">
+              <div class="room-info">
+                <span class="room-name">Executive Suite</span>
+                <span class="room-price">₦65,000/night</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item" data-room="Royal Suite">
+              <div class="room-info">
+                <span class="room-name">Royal Suite</span>
+                <span class="room-price">₦120,000/night</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item" data-room="Penthouse Suite">
+              <div class="room-info">
+                <span class="room-name">Penthouse Suite</span>
+                <span class="room-price">₦150,000/night</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item" data-room="Presidential Suite">
+              <div class="room-info">
+                <span class="room-name">Presidential Suite</span>
+                <span class="room-price">₦250,000/night</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2 class="animate-text">Welcome to Luxury Haven</h2>
+      <p class="animate-text delay-1">Where every moment becomes a cherished memory</p>
+      <div class="hero-cta animate-text delay-2">
+        <a href="#rooms" class="btn btn-primary">Explore Suites</a>
+        <a href="#virtual-tour" class="btn btn-outline">Virtual Tour</a>
+      </div>
+      <div class="hero-features animate-text delay-3">
+        <div class="feature">
+          <i class="fas fa-star"></i>
+          <span>5-Star Luxury</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-award"></i>
+          <span>Award Winning</span>
+        </div>
+        <div class="feature">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Prime Location</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms">
+    <div class="section-header">
+      <span class="subtitle">Accommodation</span>
+      <h2>Our Rooms</h2>
+      <p>Choose from our selection of comfortable and luxurious rooms</p>
+    </div>
+    <div class="rooms-grid">
+      <!-- Standard Room -->
+      <article class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32" alt="Standard Room" loading="lazy">
+          <div class="room-badge">Best Value</div>
+        </div>
+        <div class="room-content">
+          <h3>Standard Room</h3>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Queen Bed</span>
+            <span><i class="fas fa-ruler-combined"></i> 30 m²</span>
+            <span><i class="fas fa-mountain"></i> City View</span>
+          </div>
+          <p>Comfortable and well-appointed room with modern amenities for a pleasant stay.</p>
+          <div class="room-footer">
+            <div class="price">
+              <span class="amount">20000</span>
+              <span class="per">per night</span>
+            </div>
+            <button class="btn btn-book" data-room="Standard Room">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Deluxe Room -->
+      <article class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39" alt="Deluxe Suite" loading="lazy">
+          <div class="room-badge">Popular Choice</div>
+        </div>
+        <div class="room-content">
+          <h3>Deluxe Suite</h3>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King Bed</span>
+            <span><i class="fas fa-ruler-combined"></i> 55 m²</span>
+            <span><i class="fas fa-mountain"></i> City View</span>
+          </div>
+          <p>Immerse yourself in luxury with our spacious Deluxe Suite, featuring premium amenities and stunning city views.</p>
+          <div class="room-footer">
+            <div class="price">
+              <span class="amount">45000</span>
+              <span class="per">per night</span>
+            </div>
+            <button class="btn btn-book" data-room="Deluxe Suite">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Executive Suite -->
+      <article class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Suite Room" loading="lazy">
+          <div class="room-badge">Luxury</div>
+        </div>
+        <div class="room-content">
+          <h3>Executive Suite</h3>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King Bed</span>
+            <span><i class="fas fa-ruler-combined"></i> 75 m²</span>
+            <span><i class="fas fa-mountain"></i> Ocean View</span>
+          </div>
+          <p>Spacious suite with separate living area and premium amenities for an luxurious experience.</p>
+          <div class="room-footer">
+            <div class="price">
+              <span class="amount">65000</span>
+              <span class="per">per night</span>
+            </div>
+            <button class="btn btn-book" data-room="Executive Suite">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Royal Suite -->
+      <article class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304" alt="Royal Suite" loading="lazy">
+          <div class="room-badge">Ultra Luxury</div>
+        </div>
+        <div class="room-content">
+          <h3>Royal Suite</h3>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Master Suite</span>
+            <span><i class="fas fa-ruler-combined"></i> 150 m²</span>
+            <span><i class="fas fa-mountain"></i> 360° View</span>
+          </div>
+          <p>The epitome of luxury with two bedrooms, private terrace, dining room, and personal concierge service.</p>
+          <div class="room-footer">
+            <div class="price">
+              <span class="amount">120000</span>
+              <span class="per">per night</span>
+            </div>
+            <button class="btn btn-book" data-room="Royal Suite">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Penthouse -->
+      <article class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af" alt="Penthouse" loading="lazy">
+          <div class="room-badge">Premium</div>
+        </div>
+        <div class="room-content">
+          <h3>Penthouse Suite</h3>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> King Bed</span>
+            <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+            <span><i class="fas fa-mountain"></i> Panoramic View</span>
+          </div>
+          <p>Ultimate luxury with panoramic views, private terrace, and exclusive amenities.</p>
+          <div class="room-footer">
+            <div class="price">
+              <span class="amount">150000</span>
+              <span class="per">per night</span>
+            </div>
+            <button class="btn btn-book" data-room="Penthouse Suite">Book Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Presidential Suite -->
+      <article class="room-card">
+        <div class="room-image">
+          <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3" alt="Presidential Suite" loading="lazy">
+          <div class="room-badge">Ultimate</div>
+        </div>
+        <div class="room-content">
+          <h3>Presidential Suite</h3>
+          <div class="room-features">
+            <span><i class="fas fa-bed"></i> Grand Master</span>
+            <span><i class="fas fa-ruler-combined"></i> 200 m²</span>
+            <span><i class="fas fa-mountain"></i> Private Floor</span>
+          </div>
+          <p>Unparalleled luxury with private elevator, grand piano, library, and private chef on request.</p>
+          <div class="room-footer">
+            <div class="price">
+              <span class="amount">250000</span>
+              <span class="per">per night</span>
+            </div>
+            <button class="btn btn-book" data-room="Presidential Suite">Book Now</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="section-header">
+      <span class="subtitle">Our Services</span>
+      <h2>Hotel Services</h2>
+      <p>Experience luxury with our premium services and facilities</p>
+    </div>
+    
+    <!-- Restaurants -->
+    <div class="service-category">
+      <h3>Dining</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="Fine Dining Restaurant">
+          <div class="service-content">
+            <h4>The Grand Restaurant</h4>
+            <p>Fine dining experience with international cuisine</p>
+            <ul class="menu-highlights">
+              <li>Signature Steaks</li>
+              <li>Fresh Seafood</li>
+              <li>International Wines</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Casual Dining">
+          <div class="service-content">
+            <h4>Café Bistro</h4>
+            <p>Casual dining with local and international favorites</p>
+            <ul class="menu-highlights">
+              <li>All-Day Breakfast</li>
+              <li>Local Specialties</li>
+              <li>Fresh Pastries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events & Conferences -->
+    <div class="service-category">
+      <h3>Events & Conferences</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865" alt="Conference Hall">
+          <div class="service-content">
+            <h4>Conference Facilities</h4>
+            <p>State-of-the-art meeting rooms and conference halls</p>
+            <ul class="facility-features">
+              <li>Multiple Conference Rooms</li>
+              <li>Advanced AV Equipment</li>
+              <li>Event Planning Services</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3" alt="Wedding Venue">
+          <div class="service-content">
+            <h4>Event Spaces</h4>
+            <p>Perfect venues for weddings and special occasions</p>
+            <ul class="facility-features">
+              <li>Ballroom</li>
+              <li>Garden Venue</li>
+              <li>Catering Services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Services -->
+    <div class="service-category">
+      <h3>Wellness & Recreation</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Gym">
+          <div class="service-content">
+            <h4>Fitness Center</h4>
+            <p>Modern gym with latest equipment</p>
+            <ul class="facility-features">
+              <li>24/7 Access</li>
+              <li>Personal Training</li>
+              <li>Yoga Classes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef" alt="Spa">
+          <div class="service-content">
+            <h4>Spa & Wellness</h4>
+            <p>Relaxation and rejuvenation services</p>
+            <ul class="facility-features">
+              <li>Massage Therapy</li>
+              <li>Beauty Treatments</li>
+              <li>Sauna & Steam Room</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Services -->
+    <div class="service-category">
+      <h3>Additional Services</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d" alt="Concierge Service">
+          <div class="service-content">
+            <h4>Concierge Services</h4>
+            <p>24/7 personalized assistance for all your needs</p>
+            <ul class="facility-features">
+              <li>Restaurant Reservations</li>
+              <li>Tour Arrangements</li>
+              <li>Transportation Services</li>
+              <li>Theater & Event Tickets</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" alt="Business Center">
+          <div class="service-content">
+            <h4>Business Center</h4>
+            <p>Full-service business facilities</p>
+            <ul class="facility-features">
+              <li>Private Meeting Rooms</li>
+              <li>Video Conferencing</li>
+              <li>Secretarial Services</li>
+              <li>High-Speed Internet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <h3>Recreation & Entertainment</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Pool">
+          <div class="service-content">
+            <h4>Swimming Pool</h4>
+            <p>Luxury pool facilities for relaxation</p>
+            <ul class="facility-features">
+              <li>Heated Indoor Pool</li>
+              <li>Outdoor Infinity Pool</li>
+              <li>Kids Pool Area</li>
+              <li>Pool Bar Service</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b" alt="Tennis Court">
+          <div class="service-content">
+            <h4>Sports & Recreation</h4>
+            <p>Stay active during your stay</p>
+            <ul class="facility-features">
+              <li>Tennis Courts</li>
+              <li>Golf Putting Green</li>
+              <li>Bicycle Rentals</li>
+              <li>Jogging Track</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <div class="section-header">
+      <span class="subtitle">Find Us</span>
+      <h2>Our Location</h2>
+      <p>Conveniently located in the heart of the city</p>
+    </div>
+    <div class="location-container">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15858.879702475066!2d3.4175634!3d6.4279673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53280e7648d%3A0x4d01e5de51523e93!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1647951865992!5m2!1sen!2sng" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="location-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Address</h4>
+            <p>123 king Avenue<br>Lagos state, Nigeria</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-car"></i>
+          <div>
+            <h4>Getting Here</h4>
+            <p>15 minutes from Airport<br>5 minutes from Central Station</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>Tel: +234 09168268828<br>Email: info@luxuryhaven.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews">
+    <div class="section-header">
+      <span class="subtitle">Testimonials</span>
+      <h2>Guest Reviews</h2>
+      <p>What our guests say about their stay</p>
+    </div>
+    <div class="reviews-slider">
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/150?img=1" alt="Guest" class="review-avatar">
+          <div class="review-info">
+            <h4>John Smith</h4>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">"Exceptional service and stunning accommodations. The staff went above and beyond to make our stay memorable."</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/150?img=5" alt="Guest" class="review-avatar">
+          <div class="review-info">
+            <h4>Sarah Johnson</h4>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">"The penthouse suite was absolutely breathtaking! The panoramic views, luxurious amenities, and attentive service made our anniversary truly special."</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/150?img=8" alt="Guest" class="review-avatar">
+          <div class="review-info">
+            <h4>Michael Chen</h4>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">"The spa services were incredible, and the restaurants offered an amazing culinary experience. Perfect for both business and leisure travelers."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <div class="section-header">
+      <span class="subtitle">Latest News</span>
+      <h2>Our Blog</h2>
+      <p>Stay updated with our latest news and events</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Blog Post">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+            <span><i class="far fa-user"></i> Admin</span>
+          </div>
+          <h3>Summer Special: Luxury Weekend Getaway</h3>
+          <p>Discover our exclusive summer packages and special offers for an unforgettable weekend escape.</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Blog Post">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+            <span><i class="far fa-user"></i> Chef Michael</span>
+          </div>
+          <h3>Culinary Journey: New Spring Menu</h3>
+          <p>Experience our new seasonal menu featuring fresh local ingredients and innovative culinary creations.</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3" alt="Blog Post">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> March 5, 2024</span>
+            <span><i class="far fa-user"></i> Events Team</span>
+          </div>
+          <h3>Wedding Season: Perfect Venues</h3>
+          <p>Plan your dream wedding at our stunning venues. Special packages and expert planning services available.</p>
+          <a href="#" class="btn btn-outline">Read More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>We're here to help plan your perfect stay</p>
+        </div>
+        <div class="info-grid">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>123 king Avenue, lagos state, Nigeria</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Contact</h4>
+              <p>Tel: +1 (555) 123-4567<br>Email: info@luxuryhaven.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Hours</h4>
+              <p>24/7 Guest Services<br>Check-in: 3 PM | Check-out: 11 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Luxury Haven</h3>
+        <p>Experience extraordinary moments in unparalleled luxury</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Luxury Haven. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Book Your Stay</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="suite">Suite Type</label>
+          <input type="text" id="suite" readonly>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check In</label>
+            <input type="date" id="checkin" required>
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check Out</label>
+            <input type="date" id="checkout" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Guests</label>
+            <select id="guests" required>
+              <option value="">Select</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rooms">Rooms</label>
+            <select id="rooms" required>
+              <option value="1">1 Room</option>
+              <option value="2">2 Rooms</option>
+              <option value="3">3 Rooms</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
