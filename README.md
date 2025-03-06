@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @Aystar09140
+- 👋 Hi, I’m @Aystar
 - 👀 I’m interested in coding
-- 🌱 I’m currently learning J's, python
+- 🌱 I’m currently learning J's, python,html,css,next js and react
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me, WhatsApp 09168268828
 
