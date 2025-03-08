@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AYSTAR</title>
+    <title>AYSTAR - Full Stack Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="AYSTAR - Full Stack Developer specializing in modern web applications, responsive design, and scalable solutions">
+    <meta name="keywords" content="full stack developer, web development, React, Node.js, JavaScript, PHP, portfolio">
+    <meta name="author" content="AYSTAR">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AYSTAR - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Creating elegant, scalable solutions with modern web technologies">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+    <meta property="og:type" content="website">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
     <!-- Sidebar/menu -->
@@ -59,94 +76,193 @@
             
             <!-- Hero Section -->
             <div class="hero-section w3-container w3-padding-64">
-                <div class="w3-row">
+                <div id="particles-js"></div>
+                <div class="hero-content w3-row">
                     <div class="w3-col m8">
-                        <h1 class="w3-jumbo"><b>Hi, I'm AYSTAR</b></h1>
-                        <h2 class="w3-xxlarge"><span class="w3-text-teal">Full Stack Developer</span></h2>
-                        <p class="w3-large">I create beautiful and functional web applications with modern technologies.</p>
-                        <div class="w3-padding-32">
-                            <a href="#contact" class="w3-button w3-teal w3-padding-large w3-margin-right">
-                                <i class="fa fa-envelope"></i> Contact Me
+                        <h1 class="w3-jumbo animate__animated animate__fadeInDown"><b>Hi, I'm AYSTAR</b></h1>
+                        <h2 class="w3-xxlarge"><span class="w3-text-teal typing-text animate__animated animate__fadeInUp animate__delay-1s">Full Stack Developer</span></h2>
+                        <p class="w3-large animate__animated animate__fadeInUp animate__delay-2s">Transforming ideas into elegant, scalable solutions</p>
+                        <div class="social-links hero-social animate__animated animate__fadeInUp animate__delay-3s">
+                            <a href="https://github.com/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-dark-grey w3-margin-right">
+                                <i class="fa fa-github"></i>
                             </a>
-                            <a href="#portfolio" class="w3-button w3-white w3-border w3-padding-large">
-                                <i class="fa fa-folder"></i> View Work
+                            <a href="https://linkedin.com/in/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-blue w3-margin-right">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-light-blue">
+                                <i class="fa fa-twitter"></i>
                             </a>
                         </div>
                     </div>
+                    <div class="w3-col m4">
+                        <div class="profile-image-container animate__animated animate__fadeInRight animate__delay-1s">
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" 
+                                 alt="Profile Picture" 
+                                 class="hero-profile-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator animate__animated animate__fadeInUp animate__delay-4s">
+                    <div class="mouse"></div>
+                    <p>Scroll Down</p>
                 </div>
             </div>
 
             <!-- Projects Section -->
             <div class="w3-container w3-padding-32">
                 <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Featured Projects</h2>
+                <div class="project-filters w3-margin-bottom">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
                 <div class="w3-row-padding">
                     <div class="w3-third w3-container w3-margin-bottom">
-                        <div class="project-card">
-                            <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="E-commerce Platform" style="width:100%" class="w3-hover-opacity">
+                        <div class="project-card" data-category="fullstack">
+                            <div class="project-image-container">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="E-commerce Platform" class="w3-hover-opacity">
+                                <div class="project-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
                             <div class="w3-container w3-white">
-                                <h3><b>E-commerce Platform</b></h3>
-                                <p class="w3-text-grey">A full-featured e-commerce platform built with React and Node.js</p>
+                                <div class="project-header">
+                                    <h3><b>E-commerce Platform</b></h3>
+                                    <span class="project-date">Completed Dec 2023</span>
+                                </div>
+                                <p class="w3-text-grey">A full-featured e-commerce platform with integrated payment processing and inventory management.</p>
                                 <div class="tech-stack">
                                     <span class="tech-tag">React</span>
                                     <span class="tech-tag">Node.js</span>
                                     <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Redux</span>
                                 </div>
-                                <div class="w3-row w3-padding-16">
-                                    <div class="w3-half">
-                                        <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
-                                    </div>
-                                    <div class="w3-half">
-                                        <a href="#" class="w3-button w3-white w3-border w3-padding-small">Source Code</a>
-                                    </div>
+                                <div class="project-links">
+                                    <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
+                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small">Case Study</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="w3-third w3-container w3-margin-bottom">
-                        <div class="project-card">
-                            <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg" alt="Luxury Hotel Website" style="width:100%" class="w3-hover-opacity">
+                        <div class="project-card" data-category="design">
+                            <div class="project-image-container">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg" alt="Luxury Hotel Website" class="w3-hover-opacity">
+                                <div class="project-overlay">
+                                    <a href="#" class="view-project">View Project</a>
+                                </div>
+                            </div>
                             <div class="w3-container w3-white">
-                                <h3><b>Luxury Hotel Website</b></h3>
-                                <p class="w3-text-grey">A modern hotel booking platform with real-time availability and booking system</p>
+                                <div class="project-header">
+                                    <h3><b>Luxury Hotel Website</b></h3>
+                                    <span class="project-date">Completed Nov 2023</span>
+                                </div>
+                                <p class="w3-text-grey">Modern hotel booking platform with real-time availability and seamless booking experience.</p>
                                 <div class="tech-stack">
                                     <span class="tech-tag">HTML5</span>
                                     <span class="tech-tag">CSS3</span>
                                     <span class="tech-tag">JavaScript</span>
                                     <span class="tech-tag">PHP</span>
                                 </div>
-                                <div class="w3-row w3-padding-16">
-                                    <div class="w3-half">
-                                        <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
-                                    </div>
-                                    <div class="w3-half">
-                                        <a href="#" class="w3-button w3-white w3-border w3-padding-small">Source Code</a>
-                                    </div>
+                                <div class="project-links">
+                                    <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
+                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small">Case Study</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="w3-third w3-container">
-                        <div class="project-card">
-                            <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="AI Chat Interface" style="width:100%" class="w3-hover-opacity">
-                            <div class="w3-container w3-white">
-                                <h3><b>AI Chat Interface</b></h3>
-                                <p class="w3-text-grey">A modern chat interface with AI-powered responses and analytics</p>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">TypeScript</span>
-                                    <span class="tech-tag">OpenAI</span>
-                                    <span class="tech-tag">WebSocket</span>
-                                </div>
-                                <div class="w3-row w3-padding-16">
-                                    <div class="w3-half">
-                                        <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
-                                    </div>
-                                    <div class="w3-half">
-                                        <a href="#" class="w3-button w3-white w3-border w3-padding-small">Source Code</a>
-                                    </div>
+                        <div class="project-card" data-category="frontend">
+                            <div class="project-image-container">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="Modern Landing Page" class="w3-hover-opacity">
+                                <div class="project-overlay">
+                                    <a href="#" class="view-project">View Project</a>
                                 </div>
                             </div>
+                            <div class="w3-container w3-white">
+                                <div class="project-header">
+                                    <h3><b>Modern Landing Page</b></h3>
+                                    <span class="project-date">Completed Oct 2023</span>
+                                </div>
+                                <p class="w3-text-grey">A sleek and responsive landing page with modern design principles and smooth animations.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">GSAP</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
+                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="w3-container w3-padding-64">
+                <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Client Testimonials</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fa fa-quote-left quote-icon"></i>
+                            <p>"AYSTAR delivered an exceptional e-commerce platform that exceeded our expectations. Their technical expertise and attention to detail were impressive."</p>
+                            <div class="testimonial-author">
+                                <h4>John Smith</h4>
+                                <p>CEO, TechRetail</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fa fa-quote-left quote-icon"></i>
+                            <p>"Working with AYSTAR was a great experience. They understood our requirements perfectly and delivered a beautiful, functional website."</p>
+                            <div class="testimonial-author">
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Director, LuxStay Hotels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="w3-container w3-padding-64">
+                <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Certifications & Achievements</h2>
+                <div class="certifications-container">
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h4>Full Stack Web Development</h4>
+                            <p>Programming Hub</p>
+                            <span class="certification-date">2023</span>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h4>JavaScript Algorithms and Data Structures</h4>
+                            <p>freeCodeCamp</p>
+                            <span class="certification-date">2023</span>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h4>Best Web Application Award</h4>
+                            <p>Local Tech Innovation Summit</p>
+                            <span class="certification-date">2023</span>
                         </div>
                     </div>
                 </div>
@@ -278,6 +394,38 @@
         </div> 
     </div>
     <script src="script.js"></script>
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.classList.remove('hidden');
+                            setTimeout(() => {
+                                card.style.display = 'block';
+                            }, 1);
+                        } else {
+                            card.classList.add('hidden');
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 500);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
    
