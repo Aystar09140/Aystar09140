@@ -42,6 +42,5 @@ I'm passionate about creating seamless web experiences and innovative solutions.
 
 <<<<<<< HEAD
 - 💼 [LinkedIn](Akuya Praise)
-- 📧 [Email](akuyapraise@gmail,com)
 - 💼 [LinkedIn](https://www.linkedin.com/in/akuya-praise)
 
