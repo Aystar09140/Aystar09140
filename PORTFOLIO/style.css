@@ -352,10 +352,30 @@ button:hover {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation delays for cards */
+.w3-third:nth-child(1) .project-card {
+    transition-delay: 0.1s;
+}
+
+.w3-third:nth-child(2) .project-card {
+    transition-delay: 0.3s;
+}
+
+.w3-third:nth-child(3) .project-card {
+    transition-delay: 0.5s;
 }
 
 .project-card .w3-container {
@@ -1040,93 +1060,62 @@ form textarea:focus {
     font-weight: 500;
 }
 
-/* Hero Section Improvements */
-.hero-social {
-    margin-top: 2rem;
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
-.hero-social a {
-    transition: transform 0.3s ease;
+.animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.hero-social a:hover {
-    transform: translateY(-5px);
+/* Animation delays */
+.delay-1 {
+    transition-delay: 0.1s;
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+.delay-2 {
+    transition-delay: 0.3s;
 }
 
-.mouse {
-    width: 30px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    position: relative;
-    margin: 0 auto 10px;
+.delay-3 {
+    transition-delay: 0.5s;
 }
 
-.mouse::before {
-    content: '';
-    width: 4px;
-    height: 8px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 8px;
-    border-radius: 2px;
-    animation: scroll 2s infinite;
+.delay-4 {
+    transition-delay: 0.7s;
 }
 
-.scroll-indicator p {
-    color: #fff;
-    font-size: 0.9rem;
-    margin: 0;
+/* Slide animations */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
 }
 
-@keyframes scroll {
-    0% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(20px);
-    }
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease;
 }
 
-/* Additional Hero Animations */
-.hero-section .w3-jumbo {
-    animation-duration: 1s;
+.slide-left.animate,
+.slide-right.animate {
+    opacity: 1;
+    transform: translateX(0);
 }
 
-.hero-section .typing-text {
-    animation-duration: 1s;
-    position: relative;
+/* Scale animations */
+.scale-up {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease;
 }
 
-.hero-section p {
-    animation-duration: 1s;
-}
-
-.hero-profile-image {
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+.scale-up.animate {
+    opacity: 1;
+    transform: scale(1);
 }

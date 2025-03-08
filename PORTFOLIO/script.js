@@ -126,3 +126,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Enhanced Scroll Animations
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all elements that need animation
+    const animatedElements = document.querySelectorAll('.animate-on-scroll, .slide-left, .slide-right, .scale-up, .project-card');
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});
