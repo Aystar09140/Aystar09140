@@ -203,3 +203,498 @@ body {
 button:hover {
   animation: bounce 0.5s;
 }
+
+/* Project section styles */
+.w3-third {
+  transition: transform 0.3s ease;
+}
+
+.w3-third:hover {
+  transform: translateY(-5px);
+}
+
+.w3-button {
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.w3-button:hover {
+  background-color: #009688 !important;
+  color: white !important;
+}
+
+/* Profile section styles */
+.w3-container p {
+  line-height: 1.6;
+}
+
+/* Improved card styles */
+.w3-container.w3-white {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Animated Background */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-section {
+    padding: 128px 16px;
+    background: linear-gradient(-45deg, #009688, #004d40, #00695c, #00897b);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    position: relative;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hero-section > div {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-section h2 {
+    color: #e0f2f1;
+}
+
+.hero-section p {
+    color: #e0f2f1;
+    margin-bottom: 32px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Project Cards */
+.project-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 16px 0;
+    color: #333;
+}
+
+/* Tech Stack Tags */
+.tech-stack {
+    margin: 16px 0;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 4px 4px 0;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    font-size: 0.85em;
+    color: #495057;
+}
+
+/* Improved Button Styles */
+.w3-button {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.w3-button.w3-teal {
+    background-color: #009688 !important;
+}
+
+.w3-button.w3-teal:hover {
+    background-color: #00796b !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Section Headers */
+h2.w3-border-bottom {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+/* Contact Form Improvements */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #009688;
+    outline: none;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 64px 16px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    
+    .project-card {
+        margin-bottom: 32px;
+    }
+}
+
+/* Contact Section */
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    margin: 16px 0;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    width: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.social-links .w3-button {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links .w3-button:hover {
+    transform: translateY(-3px);
+}
+
+.contact-form {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #009688;
+}
+
+.contact-form button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00796b;
+}
+
+/* About Section Cards Improvement */
+.container .card .face1 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(0);
+    padding: 20px;
+}
+
+.container .card .face1 img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.container .card .face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card .face1 h3 {
+    margin: 10px 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face2 {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    transform: translateY(0);
+}
+
+.container .card .face2 .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Technologies Section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 350px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card .face1 {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border-bottom: 3px solid #009688;
+}
+
+.card .face1 img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+
+.card:hover .face1 img {
+    transform: scale(1.1);
+}
+
+.card .face1 h3 {
+    color: #009688;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.card .face2 {
+    padding: 30px;
+    background: white;
+}
+
+.card .face2 .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .face2 p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card .face2 a.w3-button {
+    align-self: flex-start;
+    margin-top: auto;
+    background-color: transparent;
+    color: #009688;
+    border: 2px solid #009688;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card .face2 a.w3-button:hover {
+    background-color: #009688;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Skills Section Title */
+#skills h3 {
+    color: #333;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#skills h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #009688;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.skill-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.75rem;
+}
+
+.skill-content h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.skill-content p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #f0f0f0;
+    color: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #009688;
+    color: white;
+}

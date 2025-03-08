@@ -17,9 +17,10 @@
             <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
                 <i class="fa fa-remove"></i>
             </a>
-            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Backgrounds-HD-Car-Wallpapers.jpg" style="width:45%;" class="w3-round"><br><br>
-            <h4><b>PORTFOLIO</b></h4>
-            <p class="w3-text-grey">Template by AYSTAR</p>
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="width:100px; height:100px; object-fit:cover;" class="w3-round"><br><br>
+            <h4><b>AYSTAR</b></h4>
+            <p class="w3-text-grey">Full Stack Developer</p>
+            <p>Passionate about creating elegant solutions to complex problems. Experienced in both frontend and backend development.</p>
         </div>
         <div class="w3-bar-block">
             <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
@@ -48,105 +49,235 @@
         </div>
     </nav>
     <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:300px">
         <!-- Header -->
         <header id="portfolio">
             <img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
-        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-        <div class="w3-container">
-            <h1><b>MY PORTFOLIO</b></h1>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
             
-    <!-- Large Image with Text Overlay -->
-                <div class="w3-container" style="position: relative; text-align: center; color: rgb(231, 225, 225);">
-                    <img src="https://wallpapercave.com/wp/7GnAy3T.jpg" style="width:100%;" alt="Large Image">
-    <div style="position: absolute; top: 80%; left: 30%; transform: translate(-50%, -50%); font-size: 14px; font-weight: bold;">
-        MADE BY AYSTAR
-    </div>
-</div>
-   <!-- About Section -->
-   <div id="about" class="w3-container w3-padding-32">
-    <h2>ABOUT ME</h2>
-                    <p>I am a passionate web developer with experience in various technologies including HTML, CSS, JavaScript, and React.</p>
-      <!-- New About Section with Cards -->
-      <div class="w3-container" id="about">
-        <h2>Technologies I Work With</h2>
-        <div class="container">
-                            <div class="card animate__animated animate__fadeInUp">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="https://wallpapercave.com/wp/wp6522801.jpg" style="width:100%" class="w3-hover-opacity">           
-                        <i class="fab fa-windows"></i> 
-                        <h3>Windows</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                        <a href="#" type="button">Read More</a>
+            <!-- Hero Section -->
+            <div class="hero-section w3-container w3-padding-64">
+                <div class="w3-row">
+                    <div class="w3-col m8">
+                        <h1 class="w3-jumbo"><b>Hi, I'm AYSTAR</b></h1>
+                        <h2 class="w3-xxlarge"><span class="w3-text-teal">Full Stack Developer</span></h2>
+                        <p class="w3-large">I create beautiful and functional web applications with modern technologies.</p>
+                        <div class="w3-padding-32">
+                            <a href="#contact" class="w3-button w3-teal w3-padding-large w3-margin-right">
+                                <i class="fa fa-envelope"></i> Contact Me
+                            </a>
+                            <a href="#portfolio" class="w3-button w3-white w3-border w3-padding-large">
+                                <i class="fa fa-folder"></i> View Work
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-                            <div class="card animate__animated animate__fadeInUp">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="https://2.bp.blogspot.com/-9MIwQEstND0/T45QOs9L-LI/AAAAAAAADh0/PEDSFotZ3mg/s1600/audi+cars+hd+wallpapers.jpg" style="width:100%" class="w3-hover-opacity">           
-                        <i class="fab fa-android"></i>               
-                        <h3>Android</h3>
+
+            <!-- Projects Section -->
+            <div class="w3-container w3-padding-32">
+                <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Featured Projects</h2>
+                <div class="w3-row-padding">
+                    <div class="w3-third w3-container w3-margin-bottom">
+                        <div class="project-card">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="E-commerce Platform" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <h3><b>E-commerce Platform</b></h3>
+                                <p class="w3-text-grey">A full-featured e-commerce platform built with React and Node.js</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="w3-row w3-padding-16">
+                                    <div class="w3-half">
+                                        <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
+                                    </div>
+                                    <div class="w3-half">
+                                        <a href="#" class="w3-button w3-white w3-border w3-padding-small">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                        <a href="#" type="button">Read More</a>
+                    
+                    <div class="w3-third w3-container w3-margin-bottom">
+                        <div class="project-card">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg" alt="Luxury Hotel Website" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <h3><b>Luxury Hotel Website</b></h3>
+                                <p class="w3-text-grey">A modern hotel booking platform with real-time availability and booking system</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">PHP</span>
+                                </div>
+                                <div class="w3-row w3-padding-16">
+                                    <div class="w3-half">
+                                        <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
+                                    </div>
+                                    <div class="w3-half">
+                                        <a href="#" class="w3-button w3-white w3-border w3-padding-small">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w3-third w3-container">
+                        <div class="project-card">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="AI Chat Interface" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                                <h3><b>AI Chat Interface</b></h3>
+                                <p class="w3-text-grey">A modern chat interface with AI-powered responses and analytics</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">OpenAI</span>
+                                    <span class="tech-tag">WebSocket</span>
+                                </div>
+                                <div class="w3-row w3-padding-16">
+                                    <div class="w3-half">
+                                        <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
+                                    </div>
+                                    <div class="w3-half">
+                                        <a href="#" class="w3-button w3-white w3-border w3-padding-small">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-                            <div class="card animate__animated animate__fadeInUp">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="https://2.bp.blogspot.com/-ZvkgV8lVhfI/TZbxYY5RLLI/AAAAAAAAABA/8Z5Q3eGwCsg/s1600/Luxury+of+Mercedes+Benz+Car6.jpg" style="width:100%" class="w3-hover-opacity">
-                        <i class="fab fa-apple"></i>
-                        <h3>Apple</h3>
+        </header>
+        <!-- About Section -->
+        <div id="about" class="w3-container w3-padding-64">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h2>
+            <p class="w3-text-grey w3-large">I am a passionate web developer with experience in various technologies including HTML, CSS, JavaScript, and React. I love creating beautiful and functional web applications that solve real-world problems.</p>
+            
+            <!-- Skills Section -->
+            <div class="w3-container" id="skills">
+                <h3 class="w3-padding-16">Technologies I Work With</h3>
+                <div class="skills-container">
+                    <div class="skill-card animate__animated animate__fadeInUp">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Frontend Development">
+                        </div>
+                        <div class="skill-content">
+                            <h3>Frontend Development</h3>
+                            <p>Experienced in modern frontend development with HTML5, CSS3, JavaScript, and React. Skilled in creating responsive, user-friendly interfaces with modern design principles.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card animate__animated animate__fadeInUp">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Backend Development">
+                        </div>
+                        <div class="skill-content">
+                            <h3>Backend Development</h3>
+                            <p>Proficient in server-side development using Node.js, Express, and database management with MongoDB and SQL. Experience with RESTful APIs and server architecture.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card animate__animated animate__fadeInUp">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="API Integration">
+                        </div>
+                        <div class="skill-content">
+                            <h3>API Integration</h3>
+                            <p>Extensive experience in integrating and working with various APIs including payment gateways, social media, cloud services, and third-party services. Skilled in API authentication and security.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">GraphQL</span>
+                                <span class="skill-tag">OAuth</span>
+                                <span class="skill-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card animate__animated animate__fadeInUp">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="UI/UX Design">
+                        </div>
+                        <div class="skill-content">
+                            <h3>UI/UX & Mobile Development</h3>
+                            <p>Passionate about creating intuitive user experiences and beautiful interfaces. Skilled in mobile app development with Flutter and modern design principles.</p>
+                            <div class="skill-tags">
+                                <span class="skill-tag">UI/UX</span>
+                                <span class="skill-tag">Flutter</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Mobile Design</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-                        <a href="#" type="button">Read More</a>
-                    </div>
-                </div>
-             </div>
+            </div>
         </div>
-    </div>
-            <!-- Contact Section -->
-            <div id="contact" class="w3-container w3-padding-32">
-                <h2>Contact Me</h2>
-                <div class="w3-card-4" style="max-width:600px; margin:auto;">
-                    <div class="w3-container w3-black">
+        <!-- Contact Section -->
+        <div id="contact" class="w3-container w3-padding-64">
+            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Get in Touch</h2>
+            <div class="w3-row-padding">
+                <div class="w3-col m5">
+                    <div class="contact-info w3-padding-16">
                         <h3>Contact Information</h3>
-                        <p><strong>Email:</strong> akuyapraise@gmail.com</p>
-                        <p><strong>Phone:</strong> (234)9168268828</p>
-                        <p><strong>Address:</strong> Delta State, Nigeria</p>
+                        <div class="w3-padding-16">
+                            <p><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right w3-text-teal"></i>akuyapraise@gmail.com</p>
+                            <p><i class="fa fa-phone fa-fw w3-xlarge w3-margin-right w3-text-teal"></i>(234) 916-826-8828</p>
+                            <p><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right w3-text-teal"></i>Delta State, Nigeria</p>
+                        </div>
+                        <div class="social-links w3-padding-16">
+                            <h4>Connect With Me</h4>
+                            <div class="w3-padding-16">
+                                <a href="https://github.com/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-dark-grey w3-margin-right">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-blue w3-margin-right">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-light-blue">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h3>Send Me a Message</h3>
-                        <form action="mailto:akuyapraise@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-        
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-        
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
-                </form>
-            </div> 
-        </div>
-        <script src="script.js"></script>
-    </body>
-                </html>
+                <div class="w3-col m7">
+                    <form class="contact-form w3-padding-16" action="mailto:akuyapraise@gmail.com" method="post" enctype="text/plain">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input" type="email" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input" type="text" placeholder="Subject" required name="Subject">
+                        <textarea class="w3-input" placeholder="Message" required name="Message" rows="4"></textarea>
+                        <div class="w3-padding-16">
+                            <button class="w3-button w3-teal w3-padding-large" type="submit">
+                                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
    
