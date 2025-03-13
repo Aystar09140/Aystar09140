@@ -12,6 +12,45 @@ document.addEventListener('scroll', () => {
     });
 });
 
+// Initialize scroll animations
+function initializeScrollAnimations() {
+    const elements = document.querySelectorAll('.section-header, .room-card, .service-card, .blog-card, .review-card, .info-item');
+    
+    // Add scroll-reveal class to all elements we want to animate
+    elements.forEach((element, index) => {
+        // Add different animation directions for alternating elements
+        if (index % 2 === 0) {
+            element.classList.add('scroll-reveal', 'fade-left');
+        } else {
+            element.classList.add('scroll-reveal', 'fade-right');
+        }
+    });
+
+    // Add scroll-reveal to specific elements with delays
+    document.querySelectorAll('.hero-content > *').forEach((element, index) => {
+        element.classList.add('scroll-reveal', `delay-${index + 1}`);
+    });
+
+    // Create the intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                // Optional: Stop observing the element after it's revealed
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all elements with scroll-reveal class
+    document.querySelectorAll('.scroll-reveal').forEach(element => {
+        observer.observe(element);
+    });
+}
+
 // DOM Elements
 document.addEventListener('DOMContentLoaded', () => {
     initializeApp();
@@ -28,6 +67,7 @@ function initializeApp() {
     initializeScrollEffects();
     initializeBlogCards();
     initializeBookingDropdown();
+    initializeScrollAnimations();
 }
 
 // Navigation
