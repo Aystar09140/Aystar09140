@@ -1,0 +1,63 @@
+import { FastMCP } from "fastmcp";
+import { z } from "zod";
+
+const server = new FastMCP({
+  name: "Aystar's MCP Agent",
+  version: "1.0.0",
+});
+
+// Example tool implementation
+server.tool({
+  name: "check_inbox",
+  description: "Check email inbox for new messages",
+  inputSchema: z.object({
+    folder: z.string().optional().default("INBOX"),
+    limit: z.number().optional().default(10),
+  }),
+  handler: async ({ input }) => {
+    try {
+      // Placeholder implementation
+      return {
+        messages: [],
+        count: 0,
+        folder: input.folder,
+      };
+    } catch (error) {
+      throw new Error(`Failed to check inbox: ${error}`);
+    }
+  },
+});
+
+// Example of another tool
+server.tool({
+  name: "send_email",
+  description: "Send an email message",
+  inputSchema: z.object({
+    to: z.string().email(),
+    subject: z.string(),
+    body: z.string(),
+  }),
+  handler: async ({ input }) => {
+    try {
+      // Placeholder implementation
+      return {
+        success: true,
+        messageId: "msg_" + Date.now(),
+        sentAt: new Date().toISOString(),
+      };
+    } catch (error) {
+      throw new Error(`Failed to send email: ${error}`);
+    }
+  },
+});
+
+// Error handling for server startup
+try {
+  server.start({
+    transportType: "stdio",
+  });
+  console.error("MCP Agent started successfully");
+} catch (error) {
+  console.error("Failed to start MCP Agent:", error);
+  process.exit(1);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mcp-agent",
+  "version": "1.0.0",
+  "description": "Aystar's MCP Agent",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "node dist/index.js",
+    "dev": "./node_modules/.bin/ts-node src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "fastmcp": "^0.1.0",
+    "googleapis": "^126.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0"
+  }
+} 
