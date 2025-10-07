@@ -1,22 +1,24 @@
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import {
-  CallToolRequestSchema,
-  ListToolsRequestSchema,
-} from "@modelcontextprotocol/sdk/types.js";
-import * as os from "os";
-import axios from "axios";
-import * as dotenv from "dotenv";
+const { Server } = require("@modelcontextprotocol/sdk/server/index.js");
+const { StdioServerTransport } = require("@modelcontextprotocol/sdk/server/stdio.js");
+const { CallToolRequestSchema, ListToolsRequestSchema } = require("@modelcontextprotocol/sdk/types.js");
+const os = require("os");
+const axios = require("axios");
+const dotenv = require("dotenv");
 
 // Load environment variables
 dotenv.config();
 
-// Create MCP server
+// Create MCP server 
 const server = new Server(
   {
     name: "Aystar's MCP Agent",
     version: "1.0.0",
   },
+  {
+    capabilities: {
+      tools: {},
+    },
+  }
 );
 
 // Get PC system info tool
@@ -137,7 +139,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           throw new Error("News API key not configured");
         }
         
-        const topic = args?.topic as string;
+        const topic = args?.topic;
         
         if (topic) {
           // Search by topic using everything endpoint
@@ -200,7 +202,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       default:
         throw new Error(`Unknown tool: ${name}`);
     }
-  } catch (error: any) {
+  } catch (error) {
     throw new Error(`Tool execution failed: ${error.message}`);
   }
 });
@@ -216,3 +218,4 @@ main().catch((error) => {
   console.error("Failed to start MCP Agent:", error);
   process.exit(1);
 });
+
