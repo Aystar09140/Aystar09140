@@ -7,6 +7,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="AYSTAR - Full Stack Developer specializing in modern web applications, responsive design, and scalable solutions">
+    <!-- Note: keywords meta is largely ignored by modern search engines; safe to keep or remove -->
     <meta name="keywords" content="full stack developer, web development, React, Node.js, JavaScript, PHP, portfolio">
     <meta name="author" content="AYSTAR">
     
@@ -24,63 +25,63 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-light-grey w3-content">
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" id="mySidebar"><br>
         <div class="w3-container">
-            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <a href="#" onclick="w3_close(event)" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu" aria-label="Close menu">
                 <i class="fa fa-remove"></i>
             </a>
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" style="width:100px; height:100px; object-fit:cover;" class="w3-round"><br><br>
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="AYSTAR profile" class="w3-round" loading="lazy" decoding="async"><br><br>
             <h4><b>AYSTAR</b></h4>
             <p class="w3-text-grey">Full Stack Developer</p>
             <p>Passionate about creating elegant solutions to complex problems. Experienced in both frontend and backend development.</p>
         </div>
         <div class="w3-bar-block">
-            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+            <a href="#portfolio" onclick="w3_close(event)" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right" aria-hidden="true"></i>PORTFOLIO</a> 
+            <a href="#about" onclick="w3_close(event)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right" aria-hidden="true"></i>ABOUT</a> 
+            <a href="#contact" onclick="w3_close(event)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right" aria-hidden="true"></i>CONTACT</a>
         </div>
         <div class="w3-panel w3-large">
-            <a href="https://www.facebook.com/yourprofile" target="_blank" class="w3-hover-opacity">
-                <i class="fa fa-facebook-official"></i>
+            <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" class="w3-hover-opacity" aria-label="Facebook">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
             </a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank" class="w3-hover-opacity">
-                <i class="fa fa-instagram"></i>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" class="w3-hover-opacity" aria-label="Instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
-            <a href="https://www.snapchat.com/add/yourprofile" target="_blank" class="w3-hover-opacity">
-                <i class="fa fa-snapchat"></i>
+            <a href="https://www.snapchat.com/add/yourprofile" target="_blank" rel="noopener noreferrer" class="w3-hover-opacity" aria-label="Snapchat">
+                <i class="fa fa-snapchat" aria-hidden="true"></i>
             </a>
-            <a href="https://www.pinterest.com/yourprofile" target="_blank" class="w3-hover-opacity">
-                <i class="fa fa-pinterest-p"></i>
+            <a href="https://www.pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer" class="w3-hover-opacity" aria-label="Pinterest">
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
             </a>
-            <a href="https://twitter.com/yourprofile" target="_blank" class="w3-hover-opacity">
-                <i class="fa fa-twitter"></i>
+            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" class="w3-hover-opacity" aria-label="Twitter/X">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="w3-hover-opacity">
-                <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="w3-hover-opacity" aria-label="LinkedIn">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
         </div>
     </nav>
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close(event)" title="close side menu" id="myOverlay"></div>
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">
+    <div class="w3-main" role="main">
         <!-- Header -->
-        <header id="portfolio">
-            <img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
-            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <header>
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="AYSTAR profile small" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity" loading="lazy" decoding="async">
+            <button class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open(event)" aria-label="Open menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
             
             <!-- Hero Section -->
             <div class="hero-section w3-container w3-padding-64">
-                <div id="particles-js"></div>
+                <div id="particles-js" aria-hidden="true"></div>
                 <div class="hero-content w3-row">
                     <div class="w3-col m8">
                         <h1 class="w3-jumbo"><b>Hi, I'm AYSTAR</b></h1>
                         <h2 class="w3-xxlarge"><span class="w3-text-teal typing-text">Full Stack Developer</span></h2>
                         <p class="w3-large">Transforming ideas into elegant, scalable solutions</p>
                         <div class="w3-padding-32">
-                            <a href="#contact" class="w3-button w3-teal w3-padding-large w3-margin-right">
+                            <a href="#contact" class="w3-button w3-teal w3-padding-large w3-margin-right" role="button">
                                 <i class="fa fa-envelope"></i> Contact Me
                             </a>
                         </div>
@@ -88,35 +89,35 @@
                     <div class="w3-col m4">
                         <div class="profile-image-container">
                             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" 
-                                 alt="Profile Picture" 
-                                 class="hero-profile-image">
+                                 alt="Profile picture"
+                                 class="hero-profile-image" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Projects Section -->
-            <div class="w3-container w3-padding-32">
+            <div id="portfolio" class="w3-container w3-padding-32">
                 <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Featured Projects</h2>
                 <div class="project-filters w3-margin-bottom">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="frontend">Frontend</button>
-                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack" aria-pressed="false">Full Stack</button>
+                    <button class="filter-btn" data-filter="design" aria-pressed="false">Design</button>
                 </div>
                 <div class="w3-row-padding">
                     <div class="w3-third w3-container w3-margin-bottom">
                         <div class="project-card" data-category="fullstack">
                             <div class="project-image-container">
-                                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="E-commerce Platform" class="w3-hover-opacity">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="E-commerce Platform screenshot" class="w3-hover-opacity" loading="lazy" decoding="async">
                                 <div class="project-overlay">
-                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="view-project js-nojump">View Project</a>
                                 </div>
                             </div>
                             <div class="w3-container w3-white">
                                 <div class="project-header">
                                     <h3><b>E-commerce Platform</b></h3>
-                                    <span class="project-date">Completed Dec 2023</span>
+                                    <span class="project-date">Completed Dec 2024</span>
                                 </div>
                                 <p class="w3-text-grey">A full-featured e-commerce platform with integrated payment processing and inventory management.</p>
                                 <div class="tech-stack">
@@ -126,8 +127,8 @@
                                     <span class="tech-tag">Redux</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
-                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small">Case Study</a>
+                                    <a href="#" class="w3-button w3-teal w3-padding-small js-nojump">Live Demo</a>
+                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small js-nojump">Case Study</a>
                                 </div>
                             </div>
                         </div>
@@ -136,9 +137,9 @@
                     <div class="w3-third w3-container w3-margin-bottom">
                         <div class="project-card" data-category="design">
                             <div class="project-image-container">
-                                <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg" alt="Luxury Hotel Website" class="w3-hover-opacity">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg" alt="Luxury Hotel Website screenshot" class="w3-hover-opacity" loading="lazy" decoding="async">
                                 <div class="project-overlay">
-                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="view-project js-nojump">View Project</a>
                                 </div>
                             </div>
                             <div class="w3-container w3-white">
@@ -154,8 +155,8 @@
                                     <span class="tech-tag">PHP</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
-                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small">Case Study</a>
+                                    <a href="#" class="w3-button w3-teal w3-padding-small js-nojump">Live Demo</a>
+                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small js-nojump">Case Study</a>
                                 </div>
                             </div>
                         </div>
@@ -164,9 +165,9 @@
                     <div class="w3-third w3-container">
                         <div class="project-card" data-category="frontend">
                             <div class="project-image-container">
-                                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="Modern Landing Page" class="w3-hover-opacity">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="Modern Landing Page screenshot" class="w3-hover-opacity" loading="lazy" decoding="async">
                                 <div class="project-overlay">
-                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="view-project js-nojump">View Project</a>
                                 </div>
                             </div>
                             <div class="w3-container w3-white">
@@ -182,8 +183,8 @@
                                     <span class="tech-tag">GSAP</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="w3-button w3-teal w3-padding-small">Live Demo</a>
-                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small">Case Study</a>
+                                    <a href="#" class="w3-button w3-teal w3-padding-small js-nojump">Live Demo</a>
+                                    <a href="#" class="w3-button w3-white w3-border w3-padding-small js-nojump">Case Study</a>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +198,7 @@
                 <div class="testimonials-container">
                     <div class="testimonial-card slide-left delay-1">
                         <div class="testimonial-content">
-                            <i class="fa fa-quote-left quote-icon"></i>
+                            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i>
                             <p>"AYSTAR delivered an exceptional e-commerce platform that exceeded our expectations. Their technical expertise and attention to detail were impressive."</p>
                             <div class="testimonial-author">
                                 <h4>John Smith</h4>
@@ -207,7 +208,7 @@
                     </div>
                     <div class="testimonial-card slide-right delay-2">
                         <div class="testimonial-content">
-                            <i class="fa fa-quote-left quote-icon"></i>
+                            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i>
                             <p>"Working with AYSTAR was a great experience. They understood our requirements perfectly and delivered a beautiful, functional website."</p>
                             <div class="testimonial-author">
                                 <h4>Sarah Johnson</h4>
@@ -224,7 +225,7 @@
                 <div class="certifications-container">
                     <div class="certification-card scale-up delay-1">
                         <div class="certification-icon">
-                            <i class="fa fa-certificate"></i>
+                            <i class="fa fa-certificate" aria-hidden="true"></i>
                         </div>
                         <div class="certification-content">
                             <h4>Full Stack Web Development</h4>
@@ -234,7 +235,7 @@
                     </div>
                     <div class="certification-card scale-up delay-2">
                         <div class="certification-icon">
-                            <i class="fa fa-certificate"></i>
+                            <i class="fa fa-certificate" aria-hidden="true"></i>
                         </div>
                         <div class="certification-content">
                             <h4>JavaScript Algorithms and Data Structures</h4>
@@ -244,7 +245,7 @@
                     </div>
                     <div class="certification-card scale-up delay-3">
                         <div class="certification-icon">
-                            <i class="fa fa-trophy"></i>
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
                         </div>
                         <div class="certification-content">
                             <h4>Best Web Application Award</h4>
@@ -338,21 +339,21 @@
                     <div class="contact-info w3-padding-16 slide-left delay-1">
                         <h3>Contact Information</h3>
                         <div class="w3-padding-16">
-                            <p><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right w3-text-teal"></i>akuyapraise@gmail.com</p>
-                            <p><i class="fa fa-phone fa-fw w3-xlarge w3-margin-right w3-text-teal"></i>(234) 916-826-8828</p>
+                            <p><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right w3-text-teal" aria-hidden="true"></i><a href="mailto:akuyapraise@gmail.com">akuyapraise@gmail.com</a></p>
+                            <p><i class="fa fa-phone fa-fw w3-xlarge w3-margin-right w3-text-teal" aria-hidden="true"></i><a href="tel:+2349168268828">(234) 916-826-8828</a></p>
                             <p><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right w3-text-teal"></i>Delta State, Nigeria</p>
                         </div>
                         <div class="social-links w3-padding-16">
                             <h4>Connect With Me</h4>
                             <div class="w3-padding-16">
-                                <a href="https://github.com/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-dark-grey w3-margin-right">
-                                    <i class="fa fa-github"></i>
+                                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w3-button w3-round-xlarge w3-dark-grey w3-margin-right">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://linkedin.com/in/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-blue w3-margin-right">
-                                    <i class="fa fa-linkedin"></i>
+                                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w3-button w3-round-xlarge w3-blue w3-margin-right">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://twitter.com/yourusername" target="_blank" class="w3-button w3-round-xlarge w3-light-blue">
-                                    <i class="fa fa-twitter"></i>
+                                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" class="w3-button w3-round-xlarge w3-light-blue">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -360,16 +361,16 @@
                 </div>
                 <div class="w3-col m7">
                     <form class="contact-form w3-padding-16 slide-right delay-2" action="mailto:akuyapraise@gmail.com" method="post" enctype="text/plain">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-row-padding">
                             <div class="w3-half">
-                                <input class="w3-input" type="text" placeholder="Name" required name="Name">
+                                <input class="w3-input" type="text" placeholder="Name" aria-label="Name" required name="Name">
                             </div>
                             <div class="w3-half">
-                                <input class="w3-input" type="email" placeholder="Email" required name="Email">
+                                <input class="w3-input" type="email" placeholder="Email" aria-label="Email" required name="Email">
                             </div>
                         </div>
-                        <input class="w3-input" type="text" placeholder="Subject" required name="Subject">
-                        <textarea class="w3-input" placeholder="Message" required name="Message" rows="4"></textarea>
+                        <input class="w3-input" type="text" placeholder="Subject" aria-label="Subject" required name="Subject">
+                        <textarea class="w3-input" placeholder="Message" aria-label="Message" required name="Message" rows="4"></textarea>
                         <div class="w3-padding-16">
                             <button class="w3-button w3-teal w3-padding-large" type="submit">
                                 <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -382,37 +383,44 @@
     </div>
     <script src="script.js"></script>
     <script>
-        // Filter functionality
+        // Enhance interactions and accessibility
         document.addEventListener('DOMContentLoaded', function() {
+            // Sidebar open/close helpers
+            window.w3_open = function(ev){ if(ev) ev.preventDefault(); document.getElementById('mySidebar').style.display='block'; document.getElementById('myOverlay').style.display='block'; };
+            window.w3_close = function(ev){ if(ev) ev.preventDefault(); document.getElementById('mySidebar').style.display='none'; document.getElementById('myOverlay').style.display='none'; };
+
+            // Prevent default jump for placeholder links
+            document.querySelectorAll('a.js-nojump, a[href="#"]').forEach(a=>{
+                a.addEventListener('click', function(e){ e.preventDefault(); });
+            });
+
+            // Filter functionality with aria-pressed and class-only toggling
             const filterButtons = document.querySelectorAll('.filter-btn');
             const projectCards = document.querySelectorAll('.project-card');
-
             filterButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
+                    filterButtons.forEach(btn => { btn.classList.remove('active'); btn.setAttribute('aria-pressed','false'); });
                     button.classList.add('active');
-
+                    button.setAttribute('aria-pressed','true');
                     const filterValue = button.getAttribute('data-filter');
-
                     projectCards.forEach(card => {
-                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                            card.classList.remove('hidden');
-                            setTimeout(() => {
-                                card.style.display = 'block';
-                            }, 1);
-                        } else {
-                            card.classList.add('hidden');
-                            setTimeout(() => {
-                                card.style.display = 'none';
-                            }, 500);
-                        }
+                        const match = (filterValue === 'all' || card.getAttribute('data-category') === filterValue);
+                        card.classList.toggle('hidden', !match);
                     });
                 });
             });
+
+            // Initialize particles.js if available
+            if (window.particlesJS) {
+                particlesJS('particles-js', {
+                    particles: { number: { value: 40 }, size: { value: 3 }, color: { value: '#14b8a6' }, line_linked: { enable: true, distance: 150, color: '#14b8a6', opacity: 0.4, width: 1 }, move: { enable: true, speed: 2 } },
+                    interactivity: { events: { onhover: { enable: true, mode: 'repulse' } }, modes: { repulse: { distance: 100, duration: 0.4 } } },
+                    retina_detect: true
+                });
+            }
         });
     </script>
 </body>
 </html>
+   
    

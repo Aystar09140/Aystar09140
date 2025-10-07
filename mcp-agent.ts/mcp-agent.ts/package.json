@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mcp-agent": "file:..",
+    "ts-node": "^10.9.2"
+  }
+}

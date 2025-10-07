@@ -223,6 +223,27 @@ button:hover {
   color: white !important;
 }
 
+/* Extracted from inline styles in index.html */
+.hidden { display: none !important; }
+
+body.w3-content { max-width: 1600px; }
+
+#mySidebar { z-index: 3; width: 300px; }
+
+#myOverlay { cursor: pointer; }
+
+#mySidebar .w3-container img.w3-round {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.w3-main { margin-left: 300px; }
+
+header img.w3-circle.w3-right.w3-margin.w3-hide-large { width: 65px; }
+
+.contact-form .w3-row-padding { margin: 0 -16px 8px -16px; }
+
 /* Profile section styles */
 .w3-container p {
   line-height: 1.6;
