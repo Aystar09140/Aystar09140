@@ -106,8 +106,8 @@ Your MCP server works with **ANY** code editor that supports MCP (Model Context 
 
 #### **Environment Variables Required:**
 ```bash
-OPENWEATHER_API_KEY=956849bbf1458a017a94d3a5e541fafb
-NEWS_API_KEY=8934ce7f94cf4102ab55f9dc1aae8225
+OPENWEATHER_API_KEY=
+NEWS_API_KEY=
 ZAPIER_WEBHOOK_URL=your_zapier_webhook_url_here
 ZAPIER_API_KEY=your_zapier_api_key_here
 ```
