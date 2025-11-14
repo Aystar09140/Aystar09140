@@ -4,6 +4,10 @@ require('dotenv').config();
 async function testNews() {
   try {
     const apiKey = process.env.NEWS_API_KEY;
+    if (!apiKey) {
+      throw new Error('NEWS_API_KEY is not defined in the .env file.');
+    }
+
     const country = 'us'; // United States
     const category = 'general';
     
@@ -28,6 +32,8 @@ async function testNews() {
       console.log(`   📅 Published: ${new Date(article.publishedAt).toLocaleString()}`);
       if (article.description) {
         console.log(`   📝 ${article.description.substring(0, 100)}...`);
+      } else {
+        console.log('   📝 No description available.');
       }
       console.log(`   🔗 ${article.url}`);
     });
