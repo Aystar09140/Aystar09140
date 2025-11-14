@@ -1,10 +1,12 @@
 const axios = require('axios');
 require('dotenv').config();
 
-async function testWeather() {
+async function testWeather(city = "Benin City, Nigeria") {
   try {
-    const city = "Benin City, Nigeria";
     const apiKey = process.env.OPENWEATHER_API_KEY;
+    if (!apiKey) {
+      throw new Error('OPENWEATHER_API_KEY is not defined in the .env file.');
+    }
     
     console.log(`🌤️ Getting weather for: ${city}`);
     console.log(`Using API key: ${apiKey.substring(0, 8)}...`);
@@ -14,7 +16,7 @@ async function testWeather() {
     );
     
     const data = response.data;
-    console.log('\n🌤️ CURRENT WEATHER IN BENIN CITY, NIGERIA:');
+    console.log(`\n🌤️ CURRENT WEATHER IN ${city.toUpperCase()}:`);
     console.log('==========================================');
     console.log(`📍 Location: ${data.name}, ${data.sys.country}`);
     console.log(`🌡️ Temperature: ${data.main.temp}°C`);
@@ -22,7 +24,7 @@ async function testWeather() {
     console.log(`☁️ Weather: ${data.weather[0].description}`);
     console.log(`💧 Humidity: ${data.main.humidity}%`);
     console.log(`💨 Wind: ${data.wind.speed} m/s`);
-    console.log(`👁️ Visibility: ${data.visibility ? (data.visibility/1000).toFixed(1) + ' km' : 'N/A'}`);
+    console.log(`👁️ Visibility: ${data.visibility ? (data.visibility / 1000).toFixed(1) + ' km' : 'N/A'}`);
     console.log(`🌅 Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}`);
     console.log(`🌇 Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}`);
     
@@ -31,4 +33,4 @@ async function testWeather() {
   }
 }
 
-testWeather();
+testWeather("Washington, DC");
