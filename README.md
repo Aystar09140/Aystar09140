@@ -43,4 +43,6 @@ I'm passionate about creating seamless web experiences and innovative solutions.
 <<<<<<< HEAD
 - 💼 [LinkedIn](Akuya Praise)
 - 💼 [LinkedIn](https://www.linkedin.com/in/akuya-praise)
+- whatsapp 09169268828
+- email akuyapraise@gmail.com
 
